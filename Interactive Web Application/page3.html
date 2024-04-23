@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <title>Summtin' Yummy</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="Description" content="Registration Page">
+
+        <link rel="stylesheet" href="Lobo-page3.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="RegisterPg.js"></script>
+        <!--This is for the API excel sheet so when a person enters information into the html it will be saved in the excel spreadsheet-->
+        <script  src="https://code.jquery.com/jquery-3.4.1.js" 
+         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
+         crossorigin="anonymous">
+        </script>
+        
+    </head>
+    <body>
+        <header>
+            <h1>Summtin' Yummy</h1>
+            <!--In javascript add a feature that when you click on the header it will take you back to the home page-->
+        </header>
+        <div class="navbar"> <!--This is the navigation bar that has all of the other html files linked to it-->
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">What to Order</button>
+                <div class="dropdown-content">
+                    <a href="page2part2.html">Dairy/Nut Free</a>
+                    <a href="page2.html">Regular</a>
+                </div>
+            </div>
+            <a href="page3.html">Registration</a>
+            <a href="page4.html">Cart</a>
+        </div>
+        <main>
+            <h2>Registration</h2>
+            <!--added some images to keep the customer engaged with the website-->
+            <p><img src="images/discount.jpg" alt="discount" width="75" height="75"></p>
+            <p>This is the registration page for a customers to sign up for a loyality rewards program.
+                This program allows a customer to recieve exlusive discounts depending on how many times they have shopped from Summtin' Yummy.
+            </p>
+            <p>Here are the many benefits that come with this loyality program</p>
+            <ol>
+                <li>Every 6 macaroons ordered you get another macaroons of that flavor free</li>
+                <li>On your birthday you get a special birthday macaroon flavor</li>
+                <li>Every Month you get special discounts</li>
+            </ol>
+            <!--action="RegistrationComplete.html"-->
+            <form method="POST" id="register" action="https://sheetdb.io/api/v1/1y9ec5nnyxftk">
+                <!--This form allows the user to input information so the website can store that information-->
+                <h3>Sign Up for Summtin' Yummy Rewards</h3>
+                Name:<input type="text" aria-required="true" name="date[Name]" placeholder="ex. John Doe" required></p> <!--used the required attribute to make sure they are entered before clicking the submit button-->
+                Email: <input type="text" aria-required="true" name="data[Email]" placeholder="ex. username@gmail.com" required ></p>
+                Phone Number: <input type="text" name="data[Phone]" placeholder="ex. 999-999-9999" required></p>
+                <!--<p><input type="submit" value="Submit" id="submit"></p>-->
+                <button type="submit" id="submit1">Submit</button>
+            </form>
+            <p><img src="images/buinessCard.jpg" alt="buinesscard" width="300" height="150"></p>
+        </main>
+
+        <footer>
+            <!--Made a footer to make the page have that more professional feel to it, espically since it is about the copyright-->
+            <p>Copyright © Summtin' Yummy<br>
+            summtinyummy@gmail.com</p>
+        </footer>
+    </body>
+</html>

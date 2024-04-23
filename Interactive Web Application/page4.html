@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <title>Summtin' Yummy</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="Description" content="Order Page">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="Purchase.js"></script>
+        <link rel="stylesheet" href="Lobo-page4.css">
+    </head>
+    <body>
+        <header>
+            <h1>Summtin' Yummy</h1>
+            <!--In javascript add a feature that when you click on the header it will take you back to the home page-->
+        </header>
+        <div class="navbar">  <!--This is the navigation bar that has all of the other html files linked to it-->
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">What to Order</button>
+                <div class="dropdown-content">
+                    <a href="page2part2.html">Dairy/Nut Free</a>
+                    <a href="page2.html">Regular</a>
+                </div>
+            </div>
+            <a href="page3.html">Registration</a>
+            <a href="page4.html">Cart</a>
+        </div>
+        <main>
+            <h2>Ordering Page</h2>
+            <p>This page is to confirm what you want to order then it will display the total cost of your order and then will take display a form where you will need to fill out some payment information</p>
+            <form action="#">
+                <!--The form is to get information from the user about what they want to order-->
+                <h3>From the flavors below please click on the ones you would like to order.</h3>
+                <p><input type="checkbox" id="flav1" name="choco" value="Chocolate">
+                <label for="flav1"><img src="images/choco.jpg" alt="chocolate" width="75" height="75"> Chocolate</label></p>
+                <!--When make javascript make sure to add a function to call when the check box is clicked then 3 radio buttons will appear to ask which quanity the customer would like to get-->
+                <p><input type="checkbox" id="flav2" name="nutella" value="Nutella">
+                <label for="flav2"><img src="images/nutella.jpg" alt="nutella" width="75" height="75"> Nutella</label></p>
+                <p><input type="checkbox" id="flav3" name="straw" value="Strawberry">
+                <label for="flav3"><img src="images/Straw.JPG" alt="strawberry" width="75" height="75"> Strawberry</label></p>
+                <p><input type="checkbox" id="flav4" name="vanilla" value="Vanilla">
+                <label for="flav4"><img src="images/vanilla.jpg" alt="vanilla" width="75" height="75"> Vanilla</label></p>
+                <p><input type="checkbox" id="flav5" name="pista" value="Pistachio">
+                <label for="flav5"><img src="images/Pista.jpg" alt="pistachio" width="75" height="75"> Pistachio</label></p>
+                <p><input type="checkbox" id="flav6" name="salt" value="Salted Caramel">
+                <label for="flav6"><img src="images/SaltCar.jpg" alt="saltedCaramel" width="75" height="75"> Salted Caramel</label></p>
+                <p><input type="checkbox" id="flav7" name="whitechoco" value="White Chocolate Coconut">
+                <label for="flav7"><img src="images/coconut.jpg" alt="whitechocoCoconut" width="75" height="75"> White Chocolate Coconut</label></p>
+                <p><input type="checkbox" id="flav8" name="strawLem" value="Strawberry-Lemonade">
+                <label for="flav8"><img src="images/lemonStraw.jpg" alt="strawberrylem" width="75" height="75"> Strawberry-Lemonade</label></p>
+
+                <input id="colorAnim" class="subButton" type="submit" value="Submit">
+                <!--Once the submit button is clicked it will display the subtotal from how many macaroons are being bought times the cost of each macaroon which is $1.75 per macaroon-->
+            </form>
+        </main>
+
+        <footer>
+            <!--Made a footer to make the page have that more professional feel to it, espically since it is about the copyright-->
+            <p>Copyright © Summtin' Yummy<br>
+            summtinyummy@gmail.com</p>
+        </footer>
+    </body>
+</html>

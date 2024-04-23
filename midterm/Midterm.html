@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Weekly Sleep Tracker</title>
+    <link rel="stylesheet" href="Midterm.css">
+    <script src="Midterm.js"></script>
+</head>
+
+<body>
+<main>
+    <h1>Weekly Sleep Tracker</h1>
+    <!--add the form-->
+    <form id="your_details" name="your_details" action="#" >
+        <h2>Enter your information</h2>
+        <label id="name">Username</label><br>
+        <input type="text" id="user" placeholder="Enter your username" maxlength="10" required><br>
+        <label id="old">Age</label><br>
+        <input type="number" name="age" placeholder="Enter your age" min="5" max="120" required><br>
+        <input type="submit" value="Submit" class="btn">
+    </form>
+    
+    <h3>Choose a day:</h3>
+    <!--add the drop-down list-->
+    <select name="days" id="days">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thrusday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+    </select><br>
+
+    <!--input for sleep duration-->
+    <label id="sleep">Sleep Duration in hours:</label><br>
+    <input type="number" id="sleephrs" min="0">
+
+    <!--button for updating sleep duration-->
+    <input type="button" id="updates" value="Update" class="btn"><br>
+    <!--button for calculating average sleep-->
+    <input type="button" id="average_sleep" value="Average Sleep" class="btn">
+    <!--text box for showing average sleep-->
+    <label id="avgsleep">Average sleep duration for this week:</label><br>
+    <input type="text" id="showSleep">
+   <!--button for Track My Sleep -->
+   <input type="button" id="track_sleep" value="Track my Sleep" class="btn">
+  <!--div for showing sleep durations when sleep was less than 7hrs  and the corresponding days-->
+    <div id="result">
+        <p id="result_here"></p>
+        <table id="sleep_table"></table>
+    </div>
+
+</main>
+<footer>
+    <br/>
+    <a href="https://validator.w3.org/">Validate HTML</a>
+    <br/>
+    <a href="https://jigsaw.w3.org/css-validator/">Validate CSS</a>
+</footer>
+</body>
+</html>
